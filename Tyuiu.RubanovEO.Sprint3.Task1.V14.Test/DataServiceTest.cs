@@ -1,3 +1,5 @@
+using Tyuiu.RubanovEO.Sprint3.Task1.V14.Lib;
+
 namespace Tyuiu.RubanovEO.Sprint3.Task1.V14.Test;
 
 public class Tests
@@ -10,6 +12,7 @@ public class Tests
     [Test]
     public void Test1()
     {
-        Assert.Pass();
+        DataService ds = new DataService();
+        Assert.That(ds.GetSumSeries(0.7,1,14), Is.EqualTo(3.546));
     }
 }

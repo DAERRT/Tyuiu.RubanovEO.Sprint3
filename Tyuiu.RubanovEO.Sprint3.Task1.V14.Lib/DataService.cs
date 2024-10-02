@@ -12,10 +12,10 @@ namespace Tyuiu.RubanovEO.Sprint3.Task1.V14.Lib
             int i = startValue;
             while (i <= stopValue)
             {
-                sum += (Math.Pow(value, i) + (1 / (i + 1))) * Math.Cos(value);
+                sum += (Math.Pow(value, i) + (1 / (i + 1.0))) * Math.Cos(value);
                 i++;
             }
-            return sum;
+            return Math.Round(sum, 3);
         }
     }
 }
