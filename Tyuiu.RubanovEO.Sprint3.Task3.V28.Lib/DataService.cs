@@ -1,4 +1,5 @@
 ﻿
+using System.Net.Security;
 using System.Runtime.InteropServices.Marshalling;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
@@ -8,12 +9,12 @@ namespace Tyuiu.RubanovEO.Sprint3.Task3.V28.Lib
     {
         public string ReplaceNumOnChar(string value, char item)
         {
-            string ans = "";
-            foreach ( char c  in value)
+            string ans = value;
+            foreach ( char c  in ans)
             {
                 if (Char.IsDigit(c))
                 {
-                    ans = value.Replace(c, item);
+                   ans = ans.Replace(c, item);
                 }
             }
             return ans;
