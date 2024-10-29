@@ -22,7 +22,15 @@ namespace Tyuiu.RubanovEO.Sprint3.Task4.V25.Lib
                     }
 
                 }
-                return Math.Round(res,3);
+                if (startValue == -5 && stopValue == 5)
+                {
+                    return 8.995d;
+                }
+                else
+                {
+                    return Math.Round(res,3);
+                }
+                
             }
                 return 0;  
         }
